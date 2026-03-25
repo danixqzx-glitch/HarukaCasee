@@ -281,7 +281,7 @@ def get_top_players(limit: int = 10) -> list:
 # ── Admin helpers ─────────────────────────────────────────────
 
 def is_admin(user_id: int) -> bool:
-    if user_id == ADMIN_CHAT_ID:886788397
+    if user_id == ADMIN_CHAT_ID: 886788397
         return True
     conn = sqlite3.connect(DB_PATH)
     row = conn.execute("SELECT 1 FROM admins WHERE user_id=?", (user_id,)).fetchone()
